@@ -1,11 +1,25 @@
 .team{
+    font-family: "roboto";
     background-color: #2f303a ;
+}
+.team2{
+    font-family: "roboto";
+}
+.item3{
+    font-family: "raleway";
+}
+.item4{
+    font-family: "roboto";
 }
 header{
    background-color:  #ececec ;
 }
 .info{
+    font-family: "roboto";
     background-color: rgb(58, 134, 220) ;
+}
+.tel{
+    font-family: "roboto";
 }
 p{
     color: #757575 ;
@@ -21,4 +35,10 @@ h4{
 }
 footer{
     background-color: #2f303a;
+}
+nav{
+    font-family: "roboto";
+}
+main{
+    font-family: "roboto";
 }
