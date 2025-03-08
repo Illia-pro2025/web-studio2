@@ -1,44 +1,101 @@
+body{
+    font-family: "roboto",sans-serif;
+}
+.h1{
+    font-family:"roboto",sans-serif ;
+    font-weight:900 ;
+    font-size:44px ;
+    line-height:1,36 ;
+    letter-spacing: 6%;
+    text-align: center;
+}
 .team{
-    font-family: "roboto";
+    font-family: "roboto",sans-serif;
     background-color: #2f303a ;
 }
 .team2{
-    font-family: "roboto";
+    font-family: "roboto",sans-serif;
+    font-weight:700 ;
+    font-size:36px ;
+    line-height:2,77 ;
+    letter-spacing: 3%;
+    text-align: center;
+    color: #212121;
 }
 .item3{
-    font-family: "raleway";
+    font-family: "raleway",sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height:3,84 ;
+    letter-spacing: 3%;
 }
 .item4{
-    font-family: "roboto";
+    font-family: "roboto",sans-serif;
+    font-weight:500 ;
+    font-size: 16px;
+    line-height:1,625 ;
+    letter-spacing: 3%;
+    text-align: center;
 }
 header{
    background-color:  #ececec ;
 }
 .info{
     font-family: "roboto";
-    background-color: rgb(58, 134, 220) ;
+    font-weight:400 ;
+    font-size:14px ;
+    line-height:1,71 ;
+    letter-spacing: 3%;
 }
 .tel{
     font-family: "roboto";
+    font-weight:400 ;
+    font-size:14px ;
+    line-height:1,71 ;
+    letter-spacing:3% ;
 }
 p{
+    font-family:"roboto",sans-serif ;
+    font-weight:400 ;
+    font-size:14px ;
+    line-height:1,71 ;
+    letter-spacing: 3%;
     color: #757575 ;
 }
 h3{
-    color: #212121;
-}
-h2{
+    font-family:"roboto",sans-serif ;
+    font-weight:700 ;
+    font-size:14px ;
+    line-height:7,14 ;
+    letter-spacing:3% ;
     color: #212121;
 }
 h4{
+    font-family:"roboto",sans-serif ;
+    font-weight:400 ;
+    font-size:16px ;
+    line-height:6,25 ;
+    letter-spacing: 3%;
+    text-align: center;
     color: #757575;
 }
 footer{
     background-color: #2f303a;
 }
 nav{
-    font-family: "roboto";
+    font-family: "roboto",sans-serif;
 }
 main{
-    font-family: "roboto";
+    font-family: "roboto",sans-serif;
+}
+.button{
+    font-family:"roboto",sans-serif ;
+    font-weight:700 ;
+    font-size:16px ;
+    line-height:1,875 ;
+    letter-spacing:6% ;
+    text-align: center;
+    
+    background-color: #2196F3;
+    color:#ffffff ;
 }
