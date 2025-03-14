@@ -8,6 +8,7 @@ body{
     line-height:1,36 ;
     letter-spacing: 6%;
     text-align: center;
+    color: #ffffff; 
 }
 .team{
     font-family: "roboto",sans-serif;
@@ -83,7 +84,7 @@ footer{
     background-color: #2f303a;
 }
 nav{
-    font-family: "roboto",sans-serif;
+    font-family: "roboto",sans-serif;  
 }
 main{
     font-family: "roboto",sans-serif;
