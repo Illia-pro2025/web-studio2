@@ -1,6 +1,14 @@
 body{
     font-family: "roboto",sans-serif;
 }
+.container{
+    width: 1600px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    outline: solid red;
+}
+
 .h1{
     font-family:"roboto",sans-serif ;
     font-weight:900 ;
@@ -82,6 +90,7 @@ h4{
 }
 footer{
     background-color: #2f303a;
+    
 }
 nav{
     font-family: "roboto",sans-serif;  
@@ -90,6 +99,7 @@ main{
     font-family: "roboto",sans-serif;
 }
 .button{
+    
     font-family:"roboto",sans-serif ;
     font-weight:700 ;
     font-size:16px ;
@@ -100,3 +110,4 @@ main{
     background-color: #2196F3;
     color:#ffffff ;
 }
+
