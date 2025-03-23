@@ -6,7 +6,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 
-  outline: solid red;
+  outline: solid darkturquoise;
 }
 .logo1 {
   font-family: "raleway", sans-serif;
@@ -15,6 +15,14 @@ body {
   line-height: 3, 84;
   letter-spacing: 3%;
   color: #000000;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-left: 215px;
+  padding-right: 93px;
+
+}
+span{
+  color: #2196f3;
 }
 .logo2 {
   font-family: "raleway", sans-serif;
@@ -23,7 +31,10 @@ body {
   line-height: 3, 84;
   letter-spacing: 3%;
   color: #ffffff;
+  padding:  60px 1240px 161px 215px ;
+  
 }
+
 h1 {
   font-family: "roboto", sans-serif;
   font-weight: 900;
@@ -65,6 +76,7 @@ p {
   letter-spacing: 3%;
   text-align: center;
   color: #ffffff;
+  padding: 200px 452px 0px;
 }
 .title2 {
   font-family: "roboto", sans-serif;
@@ -74,6 +86,17 @@ p {
   letter-spacing: 3%;
   text-align: center;
   color: #212121;
+  padding: 0px 617px 50px;
+}
+.title3 {
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 2, 77;
+  letter-spacing: 3%;
+  text-align: center;
+  color: #212121;
+  padding: 94px 668px 50px;
 }
 .section-1 {
   font-family: "roboto", sans-serif;
@@ -83,14 +106,19 @@ p {
 .section-2 {
   margin-bottom: 94px;
   margin-top: 94px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 .section-4 {
-  margin-bottom: 94px;
+ 
   margin-top: 94px;
 }
 .section-5 {
-  margin-bottom: 94px;
+  margin-bottom: 0px;
   margin-top: 94px;
+  margin-left: 215px;
+  margin-right: 215px; 
 }
 .gallery-image1 {
   width: 370px;
@@ -104,13 +132,62 @@ p {
   width: 370px;
   height: 294px;
 }
-
-.list1 {
+.div-1{
+  display: flex;
+  justify-content: space-between;
+}
+.div-2{
+  display: flex;
+  justify-content: space-between;
+}
+.list1-1{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  padding-right: 250px;
+}
+.list1-2{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 32px 215px 50px 32px;
+}
+.list2{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 94px 215px 118px;
+}
+.list3{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-left: 215px;
+  margin-right: 215px;
+}
+.list4{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 0px 215px 94px;
+}
+.list5-1 {
+  padding: 0px 297px 34px 298px ;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.list5-2 {
   font-family: "roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1, 625;
   letter-spacing: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 .link {
   font-family: "roboto" sans-serif;
@@ -196,4 +273,23 @@ nav {
 
   background-color: #2196f3;
   color: #ffffff;
+  margin: 30px 692px 200px;
+  width: 216px;
+  height: 50px;
+}
+.info{
+  padding: 20px 1154px 60px 215px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.btn{
+  width: 103px;
+  height: 38px;
+  border: #2196f3;
+}
+.btn:hover,
+.btn:focus{
+  color: #ffffff;
+  background-color: #2196f3;
 }
