@@ -8,7 +8,7 @@ body {
 
   outline: solid darkturquoise;
 }
-.logo1 {
+.logo-header {
   font-family: "raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -22,15 +22,13 @@ body {
 span{
   color: #2196f3;
 }
-.logo2 {
+.logo-footer {
   font-family: "raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 3, 84;
   letter-spacing: 3%;
   color: #ffffff;
-  
-  padding:  0px 215px 20px ;
   
 }
 
@@ -67,7 +65,7 @@ p {
   letter-spacing: 3%;
   color: #757575;
 }
-.title1 {
+.title-white {
   font-family: "roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -76,19 +74,9 @@ p {
   text-align: center;
   color: #ffffff;
   padding-top: 200px;
+  padding-bottom: 30px;
 }
-.title2 {
-  font-family: "roboto", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 2, 77;
-  letter-spacing: 3%;
-  text-align: center;
-  color: #212121;
-  text-align: center;
-  padding-bottom: 50px;
-}
-.title3 {
+.title-black {
   font-family: "roboto", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -120,27 +108,27 @@ p {
   margin-top: 94px;
   
 }
-.gallery-image1 {
+.gallery-image {
   width: 370px;
   height: 294px;
 }
-.gallery-image2 {
+.gallery-team {
   width: 270px;
   height: 260px;
 }
-.gallery-image3 {
+.gallery-production {
   width: 370px;
   height: 294px;
 }
-.div-1{
+.div-header{
   display: flex;
   justify-content: space-between;
 }
-.div-2{
+.div-list{
   display: flex;
   justify-content: space-between;
 }
-.list1-1{
+.list-header{
   display: flex;
   justify-content: space-between;
   gap: 50px;
@@ -148,32 +136,32 @@ p {
   padding-top: 32px;
   
 }
-.list1-2{
+.info-header{
   display: flex;
   justify-content: space-between;
   gap: 50px;
   padding-top: 32px;
   padding-left: 93px;
 }
-.list2{
+.list-info{
   display: flex;
   justify-content: space-between;
   gap: 30px;
   padding: 94px 215px 118px;
 }
-.list3{
+.list-photo{
   display: flex;
   justify-content: space-between;
   gap: 30px;
 
 }
-.list4{
+.list-team{
   display: flex;
   justify-content: space-between;
   gap: 30px;
   
 }
-.list5-1 {
+.list-nav-production {
   
   display: flex;
   justify-content: space-between;
@@ -181,7 +169,7 @@ p {
   padding-right: 313px;
   padding-left: 312px;
 }
-.list5-2 {
+.list-production{
   font-family: "roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -203,7 +191,7 @@ p {
 .link:focus {
   color: #2196f3;
 }
-.email1 {
+.email-header {
   font-family: "roboto";
   font-weight: 400;
   font-size: 14px;
@@ -211,11 +199,11 @@ p {
   letter-spacing: 3%;
   color: #757575;
 }
-.email1:hover,
-.email1:focus {
+.email-header:hover,
+.email-header:focus {
   color: #2196f3;
 }
-.tel1 {
+.tel-header {
   font-family: "roboto";
   font-weight: 400;
   font-size: 14px;
@@ -223,11 +211,11 @@ p {
   letter-spacing: 3%;
   color: #757575;
 }
-.tel1:hover,
-.tel1:focus {
+.tel-header:hover,
+.tel-header:focus {
   color: #2196f3;
 }
-.email2 {
+.email-footer {
   font-family: "roboto";
   font-weight: 400;
   font-size: 14px;
@@ -235,7 +223,7 @@ p {
   letter-spacing: 3%;
   color: #757575;
 }
-.tel2 {
+.tel-footer {
   font-family: "roboto";
   font-weight: 400;
   font-size: 14px;
@@ -243,7 +231,7 @@ p {
   letter-spacing: 3%;
   color: #757575;
 }
-.adress2 {
+.adress-footer {
   font-family: "roboto" sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -260,6 +248,10 @@ main {
 }
 footer {
   background-color: #2f303a;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 nav {
   font-family: "roboto", sans-serif;
@@ -272,18 +264,13 @@ nav {
   line-height: 1, 875;
   letter-spacing: 6%;
   text-align: center;
-
+  display: block;
   background-color: #2196f3;
   color: #ffffff;
-  margin: 30px 692px 200px;
   width: 216px;
   height: 50px;
-}
-.info{
-  padding-left:215px ;
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
+  margin: auto;
+  
 }
 .btn{
   width: 103px;
