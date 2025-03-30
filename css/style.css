@@ -87,23 +87,23 @@ p {
   text-align: center;
   padding-bottom: 50px;
 }
-.section-1 {
+.section {
   font-family: "roboto", sans-serif;
   background-color: #2f303a;
 }
 
-.section-2 {
+.section-info {
   margin-bottom: 94px;
   margin-top: 94px;
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
-.section-4 {
+.section-team {
  
   margin-top: 94px;
 }
-.section-5 {
+.section-production {
   margin-bottom: 0px;
   margin-top: 94px;
   
