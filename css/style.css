@@ -5,8 +5,6 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-
-  outline: solid darkturquoise;
 }
 .logo-header {
   font-family: "raleway", sans-serif;
@@ -16,10 +14,8 @@ body {
   letter-spacing: 3%;
   color: #000000;
   padding-top: 24px;
-  
-
 }
-span{
+span {
   color: #2196f3;
 }
 .logo-footer {
@@ -29,7 +25,6 @@ span{
   line-height: 3, 84;
   letter-spacing: 3%;
   color: #ffffff;
-  
 }
 
 h1 {
@@ -100,13 +95,18 @@ p {
   gap: 30px;
 }
 .section-team {
- 
   margin-top: 94px;
 }
 .section-production {
   margin-bottom: 0px;
   margin-top: 94px;
-  
+}
+.image-pobota {
+  height: 70px;
+  width: 70px;
+  display: block;
+  margin: auto;
+  background-color: #f5f4fa;
 }
 .gallery-image {
   width: 370px;
@@ -120,56 +120,52 @@ p {
   width: 370px;
   height: 294px;
 }
-.div-header{
+.div-header {
   display: flex;
   justify-content: space-between;
 }
-.div-list{
+.div-list {
   display: flex;
   justify-content: space-between;
 }
-.list-header{
+.list-header {
   display: flex;
   justify-content: space-between;
   gap: 50px;
   padding-bottom: 32px;
   padding-top: 32px;
-  
 }
-.info-header{
+.info-header {
   display: flex;
   justify-content: space-between;
   gap: 50px;
   padding-top: 32px;
   padding-left: 93px;
 }
-.list-info{
+.list-info {
   display: flex;
   justify-content: space-between;
   gap: 30px;
   padding: 94px 215px 118px;
 }
-.list-photo{
+.list-photo {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-
 }
-.list-team{
+.list-team {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  
 }
 .list-nav-production {
-  
   display: flex;
   justify-content: space-between;
   gap: 8px;
   padding-right: 313px;
   padding-left: 312px;
 }
-.list-production{
+.list-production {
   font-family: "roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -270,15 +266,14 @@ nav {
   width: 216px;
   height: 50px;
   margin: auto;
-  
 }
-.btn{
+.btn {
   width: 103px;
   height: 38px;
   border: #2196f3;
 }
 .btn:hover,
-.btn:focus{
+.btn:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
