@@ -235,8 +235,6 @@ p {
   background-color: #f5f4fa;
 }
 .image-pobota {
-
-  
   display: block;
   padding: 25px 100px;
   background-color: #f5f4fa;
@@ -292,15 +290,14 @@ p {
   height: 368px;
   border-radius: 4px;
   background-color: #fff;
-
-}
-.item-team:hover{
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
+
 .h3-team {
   text-align: center;
   margin-top: 30px;
@@ -325,6 +322,7 @@ p {
 
   margin: 94px 312px 50px;
 }
+
 .list-production {
   font-family: "roboto", sans-serif;
   font-weight: 500;
@@ -347,20 +345,25 @@ p {
 .btn:focus {
   color: #ffffff;
   background-color: #2196f3;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .item-article {
   width: 370px;
   height: 404px;
   background-color: #fff;
+  border: 1px solid rgba(238, 238, 238, 1);
 }
-.item-article:hover{
+.item-article:hover {
   background-color: #fff;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
 }
 .p-article {
   text-align: left;
