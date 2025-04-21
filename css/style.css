@@ -18,15 +18,13 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  padding-bottom: 32px;
-  padding-top: 32px;
+ padding: 32px  0px 32px;
 }
 .info-header {
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  padding-top: 32px;
-  padding-left: 93px;
+  padding: 32px 15px 32px 264px;
 }
 .email-header {
   font-family: "roboto";
@@ -55,6 +53,7 @@ header {
 .div-header {
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 nav {
   font-family: "roboto", sans-serif;
@@ -66,7 +65,7 @@ nav {
   line-height: 3, 84;
   letter-spacing: 3%;
   color: #000000;
-  padding-top: 24px;
+  padding: 32px 93px 15px 32px;
 }
 .link {
   font-family: "roboto" sans-serif;
@@ -186,36 +185,36 @@ p {
       rgba(47, 48, 58, 0.4)
     ),
     url(../image/proecte.png);
-  height: 600px;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 200px 0;
 }
 .title-white {
-  font-family: "roboto", sans-serif;
+
   font-weight: 700;
-  font-size: 36px;
-  line-height: 2, 77;
-  letter-spacing: 3%;
+  font-size: 44px;
+  line-height: 1,37;
+  letter-spacing: 0,06em;
   text-align: center;
   color: #ffffff;
-  padding-top: 200px;
-  padding-bottom: 30px;
+  text-transform: uppercase;
+  width: 700px;
+  margin: 0 auto 30px;
 }
 .button {
-  font-family: "roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1, 875;
-  letter-spacing: 6%;
+  letter-spacing: 0,06em;
   text-align: center;
   display: block;
   background-color: #2196f3;
   color: #ffffff;
-  width: 216px;
-  height: 50px;
-  margin: auto;
+
+  margin: 0 auto;
   border: #2196f3;
   border-radius: 4px;
+  padding: 10px 32px;
 }
 
 .section-info {
@@ -290,7 +289,7 @@ p {
   height: 368px;
   border-radius: 4px;
   background-color: #fff;
-  
+
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
