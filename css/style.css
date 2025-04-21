@@ -2,6 +2,7 @@
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  outline: solid red;
 }
 body {
   font-family: "roboto", sans-serif;
@@ -232,14 +233,13 @@ p {
 .font-image {
   width: 270px;
   height: 120px;
-  margin-top: 0px;
   background-color: #f5f4fa;
 }
 .image-pobota {
-  height: 70px;
-  width: 70px;
+
+  
   display: block;
-  margin: 25px 100px 25px;
+  padding: 25px 100px;
   background-color: #f5f4fa;
 }
 .list-info {
@@ -291,9 +291,12 @@ p {
 .item-team {
   width: 270px;
   height: 368px;
+  border-radius: 4px;
   background-color: #fff;
 
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.item-team:hover{
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
@@ -350,13 +353,16 @@ p {
   width: 370px;
   height: 404px;
   background-color: #fff;
+}
+.item-article:hover{
+  background-color: #fff;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
 
+}
 .p-article {
   text-align: left;
   margin-left: 24px;
