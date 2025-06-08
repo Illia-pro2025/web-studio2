@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/reset.css" />
   <body>
-    <header class="">
+    <header class="header-container">
       <div class="div-header container">
         <a class="logo-header" href="./index.html"><span>Web</span>Studio</a>
         <nav>
@@ -35,8 +35,22 @@
               </li>
             </ul>
             <ul class="info-header">
-              <li><a class="email-header">info@devstudio.com</a></li>
-              <li><a class="tel-header">+38 096 111 11 11</a></li>
+              <li class="icon-header">
+                <a class="email-header"
+                  ><svg class="icone-header envelope">
+                    <use href="./image/symbol-defs.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="icon-header">
+                <a class="tel-header"
+                  ><svg class="icone-header smartphone">
+                    <use href="./image/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
             </ul>
           </div>
         </nav>
@@ -139,9 +153,9 @@
       </div>
     </main>
     <footer>
-      <div class="container footer">
-        <a class="logo-footer" href="./index.html"><span>Web</span>Studio</a>
-        <address id="contact">
+      <div class="div-footer container">
+        <div class="footer-first">
+          <a class="logo-footer" href="./index.html"><span>Web</span>Studio</a>
           <ul class="info-footer">
             <li>
               <a class="adress-footer" href="#" target="_blank"
@@ -155,7 +169,48 @@
               <a class="tel-footer" href="#">+38 096 111 11 11</a>
             </li>
           </ul>
-        </address>
+        </div>
+        <div class="footer">
+          <h3 class="sous-title">приєднуйтесь</h3>
+          <ul class="list-icone">
+            <li> <a class="icon-footer" href="#">
+              <svg class="icone-footer">
+                <use
+                 
+                  href="./image/symbol-defs.svg#icon-instagram"
+                ></use>
+              </svg>
+              </a>
+            </li>
+            <li> <a  class="icon-footer" href="#">
+              <svg class="icone-footer">
+                <use
+                 
+                  href="./image/symbol-defs.svg#icon-twitter"
+                ></use>
+              </svg>
+              </a>
+            </li>
+            <li> <a class="icon-footer" href="#">
+              <svg class="icone-footer">
+                <use
+                  
+                  href="./image/symbol-defs.svg#icon-facebook"
+                ></use>
+              </svg>
+              </a>
+            </li>
+            <li> <a class="icon-footer" href="#">
+              <svg class="icone-footer">
+                <use
+                  
+                  href="./image/symbol-defs.svg#icon-linkedin"
+                ></use>
+              </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
