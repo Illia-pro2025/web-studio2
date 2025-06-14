@@ -27,6 +27,7 @@ header {
   padding: 32px 15px 32px 264px;
 }
 .email-header {
+  align-items: center;
   font-family: "roboto";
   font-weight: 400;
   font-size: 14px;
@@ -40,6 +41,7 @@ header {
   color: #2196f3;
 }
 .tel-header {
+  align-items: center;
   font-family: "roboto";
   font-weight: 400;
   font-size: 14px;
@@ -470,6 +472,7 @@ span {
 
 .icon-header {
   display: flex;
+  align-items: center;
 }
 
 .envelope {
