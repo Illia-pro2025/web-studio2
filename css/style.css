@@ -292,6 +292,22 @@ span {
 .gallery-image {
   width: 370px;
   height: 294px;
+  position: relative;
+}
+.sous-position {
+  padding:27px 0px ;
+  position: relative;
+  bottom: 70px;
+  background-color: #2F303ACC;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
 }
 .section-team {
   margin-top: 94px;
