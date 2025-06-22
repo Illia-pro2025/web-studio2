@@ -293,7 +293,7 @@ span {
   width: 370px;
   height: 294px;
   position: relative;
-  z-index: 0;
+  z-index: -2;
 }
 .sous-position {
   padding: 27px 0px;
@@ -308,7 +308,7 @@ span {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  z-index: 0;
+  z-index: -1;
 }
 .section-team {
   margin-top: 94px;
