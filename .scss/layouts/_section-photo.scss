@@ -1,0 +1,39 @@
+
+.title-black {
+    font-family: "roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 2, 77;
+    letter-spacing: 3%;
+    text-align: center;
+    color: #212121;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 94px;
+  }
+  .list-photo {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .gallery-image {
+    width: 370px;
+    height: 294px;
+    position: relative;
+    z-index: -2;
+  }
+  .sous-position {
+    padding: 27px 0px;
+    position: relative;
+    bottom: 70px;
+    background-color: #2f303acc;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    z-index: -1;
+  }

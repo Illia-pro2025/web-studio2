@@ -1,0 +1,186 @@
+
+footer {
+    background-color: #2f303a;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    height: 252px;
+  }
+  .email-footer {
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1, 71;
+    letter-spacing: 3%;
+    color: #757575;
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
+  .tel-footer {
+    font-family: "roboto";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1, 71;
+    letter-spacing: 3%;
+    color: #757575;
+    display: block;
+    margin-top: 9px;
+  }
+  
+  .adress-footer {
+    font-family: "roboto" sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    display: block;
+    line-height: 1, 71;
+    letter-spacing: 3%;
+  
+    margin-bottom: 9px;
+    color: #ffffff;
+  }
+  
+.info-footer {
+    gap: 9px;
+  }
+  .footer-first {
+    background-color: #2f303a;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+  }
+  
+  .logo-footer {
+    font-family: "raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 3, 84;
+    letter-spacing: 3%;
+    color: #ffffff;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  
+.h3-form {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  margin: 72px 36px 20px 93px;
+}
+.button-footer {
+  display: flex;
+  padding: 13px 28px 13px 28px;
+  background-color: #2196f3;
+  border: transparent;
+  border-radius: 4px;
+}
+.button-footer > svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: #fff;
+}
+.p-form {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 6%;
+  text-align: center;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 1);
+}
+.form {
+  display: flex;
+  align-items: center;
+}
+.input-footer {
+  margin-left: 93px;
+  margin-right: 12px;
+  padding: 15px 215px 15px 16px;
+  background-color: rgba(47, 48, 58, 1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+.input-footer::placeholder {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sous-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 75px;
+  margin-bottom: 20px;
+}
+.icon-footer {
+  fill: #ffffff;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #ffffff1a;
+  display: block;
+}
+.icone-footer {
+  width: 20px;
+  height: 20px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-footer:hover,
+.icon-footer:focus {
+  background-color: #2196f3;
+  width: 44px;
+  height: 44px;
+  fill: #ffffff;
+  padding: 12px;
+  border-radius: 50%;
+
+}
+.list-icone {
+  display: flex;
+  gap: 10px;
+}
+.div-footer {
+  display: flex;
+}
+
+.list-icon-black {
+  display: flex;
+  gap: 10px;
+  margin: 0px 30px 30px 32px;
+}
+.icon-black {
+  width: 20px;
+  height: 20px;
+}
+.icone-black {
+  padding: 12px;
+  fill: #afb1b8;
+  border-radius: 50%;
+  display: block;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icone-black:hover,
+.icone-black:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+
+}
