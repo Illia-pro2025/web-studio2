@@ -1,52 +1,49 @@
- 
 .backdrop {
-    position: fixed;
-    background-color: #00000033;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    opacity: 1;
-    transition: opacity 250ms bezier(0.4, 0, 0.2, 1) ,visibility 400ms ease-in-out;
-  
-  }
-  .backdrop.is-hidden{
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-  .modal {
-    z-index: 999999999;
-    width: 528px;
-    height: 581px;
-    background-color: #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 400ms ease-in-out ;
-  }
-  .close {
+  position: fixed;
+  background-color: #00000033;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  transition: opacity 250ms bezier(0.4, 0, 0.2, 1), visibility 400ms ease-in-out;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  z-index: 999999999;
+  width: 528px;
+  height: 581px;
+  background-color: $white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 400ms ease-in-out;
+  &__button--close {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     margin: 8px 8px 2px 490px;
     padding: 6px;
     border: 1px solid #0000001a;
-    background-color: #fff;
+    background-color: $white;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .close > svg {
+  &__icon--close {
     width: 14px;
     height: 14px;
-    background-color: #fff;
+    background-color: $white;
+    &:hover,
+    &:focus {
+      fill: $hover;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
-  .close > svg:hover,
-  .close > svg:focus {
-    fill: #2196f3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .h3-modal {
+  &__text {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 20px;
@@ -57,69 +54,87 @@
     margin-left: 40px;
     margin-right: 40px;
   }
-  .modal-icon {
+  &__title {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    color: $grey;
+    margin: 12px 466px 4px 40px;
+  }
+  &__input {
+    width: 448px;
+    height: 40px;
+    border-width: 1px;
+    border-radius: 4px;
+    margin: 0px 40px 0px 40px;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid $hover;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      & + .modal-icon {
+        fill: $hover;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  }
+  &__icon {
     width: 18px;
     height: 18px;
     position: absolute;
     left: 52px;
     margin-top: 12px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: $hover;
+    }
   }
-  .modal-icon:hover,
-  .modal-icon:focus {
-    fill: #2196f3;
-  
+  &__area {
+    &__title {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 100%;
+      letter-spacing: 1%;
+      color: rgba(117, 117, 117, 1);
+      margin: 10px 391px 4px 40px;
+    }
+    &__label {
+      width: 448px;
+      height: 120px;
+      margin: 4px 40px;
+      display: inline-block;
+    }
+    &__text {
+      display: inline-block;
+      width: 448px;
+      height: 120px;
+      padding: 12px 0px 84px 16px;
+    }
+    &__input {
+      width: 448px;
+      height: 120px;
+      display: inline-block;
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 100%;
+      letter-spacing: 1%;
+      color: rgba(117, 117, 117, 0.5);
+    }
   }
-  .p-modal {
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 1%;
-    color: #757575;
-    margin: 12px 466px 4px 40px;
+  &__checkbox {
+    display: flex;
+    &__input {
+      width: 16px;
+      height: 15px;
+      margin: 25px 8px 34px 52px;
+    }
   }
-  .modal-input {
-    width: 448px;
-    height: 40px;
-    border-width: 1px;
-    border-radius: 4px;
-    margin: 0px 40px 0px 40px;
-  }
-  .modal-input:hover,
-  .modal-input:focus,
-  .modal-input:active {
-    border: 1px solid rgba(33, 150, 243, 1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal-input:hover + .modal-icon {
-    fill: #2196f3;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .label-area {
-    width: 448px;
-    height: 120px;
-    margin: 4px 40px;
-    display: inline-block;
-  }
-  .input-area {
-    width: 448px;
-    height: 120px;
-    display: inline-block;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 1%;
-    color: rgba(117, 117, 117, 0.5);
-  }
-  .text-area {
-    display: inline-block;
-    width: 448px;
-    height: 120px;
-    padding: 12px 0px 84px 16px;
-  }
-  .text-form {
+  &__text--link {
     font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
@@ -128,7 +143,7 @@
     color: rgba(117, 117, 117, 1);
     margin-top: 20px;
   }
-  .a-form {
+  &__link {
     margin-left: 3px;
     margin-right: 51px;
     font-family: "Roboto";
@@ -138,17 +153,9 @@
     letter-spacing: 3%;
     text-decoration: underline;
     text-decoration-style: solid;
-    color: rgba(33, 150, 243, 1);
+    color: $hover;
   }
-  .input {
-    display: flex;
-  }
-  .input > input {
-    width: 16px;
-    height: 15px;
-    margin: 25px 8px 34px 52px;
-  }
-  .button-form {
+  &__button {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 16px;
@@ -156,25 +163,17 @@
     letter-spacing: 6%;
     text-align: center;
     vertical-align: middle;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(33, 150, 243, 1);
+    color: $white;
+    background-color:$hover;
     padding: 10px 52px;
     margin: 0px 164px 40px;
     border: transparent;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: $hover;
+    }
   }
-  .button-form:hover,
-  .button-form:focus {
-    background-color: rgba(24, 140, 232, 1);
-  }
-  .p-area {
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 1%;
-    color: rgba(117, 117, 117, 1);
-    margin: 10px 391px 4px 40px;
-  }
+}

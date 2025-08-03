@@ -1,17 +1,16 @@
+.hero {
+  font-family: "roboto", sans-serif;
+  background-color: $fon__black;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/proecte.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 200px 0;
 
-.section {
-    font-family: "roboto", sans-serif;
-    background-color: #2f303a;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../image/proecte.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 200px 0;
-  }
-  .title-white {
+  &__title__white {
     font-family: "Roboto";
     font-weight: 900;
     font-size: 44px;
@@ -19,10 +18,10 @@
     letter-spacing: 6%;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $white;
     margin: 0px 237px 30px;
   }
-  .button {
+  &__button {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 16px;
@@ -30,11 +29,11 @@
     letter-spacing: 6%;
     text-align: center;
     display: block;
-    background-color: #2196f3;
-    color: #ffffff;
+    background-color: $hover;
+    color: $white;
     margin: 0 auto;
-    border: #2196f3;
+    border: $hover;
     border-radius: 4px;
     padding: 10px 32px;
   }
- 
+}

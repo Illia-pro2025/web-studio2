@@ -15,36 +15,36 @@
     href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Grechen+Fuemen&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/main.css" />
   <body>
-    <header class="header-container">
-      <div class="div-header container">
-        <a class="logo-header" href="./index.html"><span>Web</span>Studio</a>
+    <header class="header">
+      <div class="header__container container">
+        <a class="header__logo" href="./index.html"><span>Web</span>Studio</a>
         <nav>
-          <div class="div-list">
-            <ul class="list-header">
+          <div class="nav">
+            <ul class="nav__list">
               <li>
-                <a class="link" href="./index.html">Студія</a>
+                <a class="nav__link" href="./index.html">Студія</a>
               </li>
               <li>
-                <a class="link" href="./portfolio.html">Портфоліо</a>
+                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
               </li>
               <li>
-                <a class="link" href="#">Контакти</a>
+                <a class="nav__link" href="#">Контакти</a>
               </li>
             </ul>
-            <ul class="info-header">
-              <li class="icon-header">
-                <a class="email-header"
-                  ><svg class="icone-header envelope">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__email"
+                  ><svg class="envelope">
                     <use href="./image/symbol-defs.svg#icon-envelope"></use>
                   </svg>
                   info@devstudio.com</a
                 >
               </li>
-              <li class="icon-header">
-                <a class="tel-header"
-                  ><svg class="icone-header smartphone">
+              <li class="header__item">
+                <a class="header__phone"
+                  ><svg class="smartphone">
                     <use href="./image/symbol-defs.svg#icon-smartphone"></use>
                   </svg>
                   +38 096 111 11 11</a
@@ -57,231 +57,244 @@
     </header>
     <main>
       <div class="container">
-        <section class="section-production">
-          <ul class="list-nav-production">
-            <li><button class="btn">усі</button></li>
-            <li><button class="btn">веб-сайти</button></li>
-            <li><button class="btn">додатки</button></li>
-            <li><button class="btn">дизайн</button></li>
-            <li><button class="btn">маркетинг</button></li>
+        <section class="article">
+          <ul class="article__nav__list">
+            <li><button class="article__button">усі</button></li>
+            <li><button class="article__button">веб-сайти</button></li>
+            <li><button class="article__button">додатки</button></li>
+            <li><button class="article__button">дизайн</button></li>
+            <li><button class="article__button">маркетинг</button></li>
           </ul>
-          <ul class="list-production">
-            <li class="item-article">
-              <div class="block">
+          <ul class="article__list">
+            <li class="article__item">
+              <div class="article__party__photo">
                 <img
                   src="./image/web-site-personne.png"
-                  alt="dfgh"
-                  class="gallery-production"
+                  alt="web-site-personne"
+                  class="article__photo"
                 />
-                <div class="production-wrap">
-                  <p class="text-wrap">
+                <div class="article__wrap">
+                  <p class="article__text__wrap">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
               </div>
-              <div class="inline">
-              <h3 class="h3-article">технокряк</h3>
-              <p class="p-article">веб-сайти</p>
-             </div> </li>
-            <li class="item-article">
-              <div class="block">
+              <div class="article__party__info">
+                <h3 class="article__title">технокряк</h3>
+                <p class="article__text">веб-сайти</p>
+              </div>
+            </li>
+            <li class="article__item">
+              <div class="article__party__photo">
                 <img
                   src="./image/style-basket.png"
-                  alt="fghg"
-                  class="gallery-production"
+                  alt="style-basket"
+                  class="article__photo"
                 />
-                <div class="production-wrap">
-                  <p class="text-wrap">
+                <div class="article__wrap">
+                  <p class="article__text__wrap">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
               </div>
-              <div class="inline">
-              <h3 class="h3-article">Постер New Orlean vs Golden Star</h3>
-              <p class="p-article">Дизайн</p>
-            </div> </li>
-            <li class="item-article">
-              <div class="block">
+              <div class="article__party__info">
+                <h3 class="article__title">Постер New Orlean vs Golden Star</h3>
+                <p class="article__text">Дизайн</p>
+              </div>
+            </li>
+            <li class="article__item">
+              <div class="article__party__photo">
                 <img
                   src="./image/application-sea-food.png"
-                  alt="ghjf"
-                  class="gallery-production"
+                  alt="application-sea-food"
+                  class="article__photo"
                 />
-                <div class="production-wrap">
-                  <p class="text-wrap">
+                <div class="article__wrap">
+                  <p class="article__text__wrap">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
               </div>
-              <div class="inline">
-              <h3 class="h3-article">Ресторан Seafood</h3>
-              <p class="p-article">Додаток</p>
-            </div>    </li>
-            <li class="item-article">
-              <div class="block">
-              <img
-                src="./image/listen.png"
-                alt="gjjf"
-                class="gallery-production"
-              />
-              <div class="production-wrap">
-                <p class="text-wrap">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+              <div class="article__party__info">
+                <h3 class="article__title">Ресторан Seafood</h3>
+                <p class="article__text">Додаток</p>
               </div>
-            </div>
-            <div class="inline">
-              <h3 class="h3-article">Проєкт Prime</h3>
-              <p class="p-article">Маркетинг</p>
-            </div>     </li>
-            <li class="item-article">
-              <div class="block">
-              <img
-                src="./image/article-box.png"
-                alt="gfsg"
-                class="gallery-production"
-              />
-              <div class="production-wrap">
-                <p class="text-wrap">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
+            </li>
+            <li class="article__item">
+              <div class="article__party__photo">
+                <img
+                  src="./image/listen.png"
+                  alt="listen"
+                  class="article__photo"
+                />
+                <div class="article__wrap">
+                  <p class="article__text__wrap">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="inline">
-              <h3 class="h3-article">Проєкт Boxes</h3>
-              <p class="p-article">Додаток</p>
-            </div> </li>
-            <li class="item-article">
-              <div class="block">
-              <img
-                src="./image/application-word.png"
-                alt="gfds"
-                class="gallery-production"
-              />
-              <div class="production-wrap">
-                <p class="text-wrap">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div></div>
-              <div class="inline">
-              <h3 class="h3-article">Inspiration has no Borders</h3>
-              <p class="p-article">Веб-сайт</p>
-            </div> </li>
-            <li class="item-article">
-              <div class="block">
-              <img
-                src="./image/book.png"
-                alt="gfds"
-                class="gallery-production"
-              />
-              <div class="production-wrap">
-                <p class="text-wrap">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div></div>
-              <div class="inline">
-              <h3 class="h3-article">видання limited edition</h3>
-              <p class="p-article">дизайн</p>
-           </div> </li>
-            <li class="item-article">
-              <div class="block">
-              <img
-                src="./image/etiquet.png"
-                alt="gfds"
-                class="gallery-production"
-              />
-              <div class="production-wrap">
-                <p class="text-wrap">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p>
-              </div></div>
-              <div class="inline">
-              <h3 class="h3-article">Проєкт lab</h3>
-              <p class="p-article">маркетинг</p>
-           </div> </li>
-            <li class="item-article">
-              <div class="block">
-              <img
-                src="./image/application-business.png"
-                alt="gfds"
-                class="gallery-production"
-              />
-              <div class="production-wrap">
-                <p class="text-wrap">
-                  Ресурс пропонує комплексні пропозиції з різним рівнем
-                  функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                  вичерпні відомості про компанію чи приватну особу.
-                </p></div> 
+              <div class="article__party__info">
+                <h3 class="article__title">Проєкт Prime</h3>
+                <p class="article__text">Маркетинг</p>
               </div>
-              <div class="inline">
-              <h3 class="h3-article">growing business</h3>
-              <p class="p-article">додаток</p>
-           </div> </li>
+            </li>
+            <li class="article__item">
+              <div class="article__party__photo">
+                <img
+                  src="./image/article-box.png"
+                  alt="article-box"
+                  class="article__photo"
+                />
+                <div class="article__wrap">
+                  <p class="article__text__wrap">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
+              <div class="article__party__info">
+                <h3 class="article__title">Проєкт Boxes</h3>
+                <p class="article__text">Додаток</p>
+              </div>
+            </li>
+            <li class="article__item">
+              <div class="article__party__photo">
+                <img
+                  src="./image/application-word.png"
+                  alt="application-word"
+                  class="article__photo"
+                />
+                <div class="article__wrap">
+                  <p class="article__text__wrap">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
+              <div class="article__party__info">
+                <h3 class="article__title">Inspiration has no Borders</h3>
+                <p class="article__text">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="article__item">
+              <div class="article__party__photo">
+                <img
+                  src="./image/book.png"
+                  alt="book"
+                  class="article__photo"
+                />
+                <div class="article__wrap">
+                  <p class="article__text__wrap">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
+              <div class="article__party__info">
+                <h3 class="article__title">видання limited edition</h3>
+                <p class="article__text">дизайн</p>
+              </div>
+            </li>
+            <li class="article__item">
+              <div class="article__party__photo">
+                <img
+                  src="./image/etiquet.png"
+                  alt="etiquet"
+                  class="article__photo"
+                />
+                <div class="article__wrap">
+                  <p class="article__text__wrap">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
+              <div class="article__party__info">
+                <h3 class="article__title">Проєкт lab</h3>
+                <p class="article__text">маркетинг</p>
+              </div>
+            </li>
+            <li class="article__item">
+              <div class="article__party__photo">
+                <img
+                  src="./image/application-business.png"
+                  alt="application-business"
+                  class="article__photo"
+                />
+                <div class="article__wrap">
+                  <p class="article__text__wrap">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+              </div>
+              <div class="article__party__info">
+                <h3 class="article__title">growing business</h3>
+                <p class="article__text">додаток</p>
+              </div>
+            </li>
           </ul>
         </section>
       </div>
     </main>
     <footer>
-      <div class="div-footer container">
-        <div class="footer-first">
-          <a class="logo-footer" href="./index.html"><span>Web</span>Studio</a>
-          <ul class="info-footer">
+      <div class="footer__container container">
+        <div class="footer__first__party">
+          <a class="footer__logo" href="./index.html"><span>Web</span>Studio</a>
+          <ul class="footer__list">
             <li>
-              <a class="adress-footer" href="#" target="_blank"
+              <a class="footer__adress" href="#" target="_blank"
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
             <li>
-              <a class="email-footer" href="#">info@devstudio.com</a>
+              <a class="footer__email" href="#">info@devstudio.com</a>
             </li>
             <li>
-              <a class="tel-footer" href="#">+38 096 111 11 11</a>
+              <a class="footer__tel" href="#">+38 096 111 11 11</a>
             </li>
           </ul>
         </div>
-        <div class="footer">
-          <h3 class="sous-title">приєднуйтесь</h3>
-          <ul class="list-icone">
+        <div class="footer__second__party">
+          <h3 class="footer__title">приєднуйтесь</h3>
+          <ul class="footer__list__icon">
             <li>
-              <a class="icon-footer" href="#">
-                <svg class="icone-footer">
+              <a class="footer__link__icon" href="#">
+                <svg class="footer__icon">
                   <use href="./image/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="icon-footer" href="#">
-                <svg class="icone-footer">
+              <a class="footer__link__icon" href="#">
+                <svg class="footer__icon">
                   <use href="./image/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="icon-footer" href="#">
-                <svg class="icone-footer">
+              <a class="footer__link__icon" href="#">
+                <svg class="footer__icon">
                   <use href="./image/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="icon-footer" href="#">
-                <svg class="icone-footer">
+              <a class="footer__link__icon" href="#">
+                <svg class="footer__icon">
                   <use href="./image/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -289,14 +302,14 @@
           </ul>
         </div>
         <div>
-          <h3 class="h3-form">Підпишіться на розсилку</h3>
-          <form action="" class="form">
+          <h3 class="footer__title__form">Підпишіться на розсилку</h3>
+          <form action="" class="footer__form">
             <label for=""
-              ><input type="text" placeholder="E-mail" class="input-footer"
+              ><input type="text" placeholder="E-mail" class="footer__input"
             /></label>
-            <button class="button-footer">
-              <p class="p-form">Підписатися</p>
-              <svg>
+            <button class="footer__button">
+              <p class="footer__text__form">Підписатися</p>
+              <svg class="footer__icon__telegram">
                 <use href="./image/symbol-defs.svg#icon-telegram"></use>
               </svg>
             </button>

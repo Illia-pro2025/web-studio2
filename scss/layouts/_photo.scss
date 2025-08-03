@@ -1,28 +1,16 @@
-
-.title-black {
-    font-family: "roboto", sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 2, 77;
-    letter-spacing: 3%;
-    text-align: center;
-    color: #212121;
-    text-align: center;
-    padding-bottom: 50px;
-    padding-top: 94px;
-  }
-  .list-photo {
+.photo{
+  &__list {
     display: flex;
     justify-content: space-between;
     gap: 30px;
   }
-  .gallery-image {
+  &__img {
     width: 370px;
     height: 294px;
     position: relative;
     z-index: -2;
   }
-  .sous-position {
+  &__title {
     padding: 27px 0px;
     position: relative;
     bottom: 70px;
@@ -34,6 +22,9 @@
     letter-spacing: 3%;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $white;
     z-index: -1;
   }
+}
+  
+ 
