@@ -1,0 +1,16 @@
+%flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin icon($padding,$fill,$border-r){
+    padding: $padding;
+    fill: $fill;
+    border-radius: $border-r;
+
+}
+@mixin text($family,$size,$weight) {
+ font-family: $family;
+ font-size: $size;
+ font-weight: $weight;
+}

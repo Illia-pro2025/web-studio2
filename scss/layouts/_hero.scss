@@ -1,5 +1,4 @@
 .hero {
-  font-family: "roboto", sans-serif;
   background-color: $fon__black;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -11,9 +10,7 @@
   padding: 200px 0;
 
   &__title__white {
-    font-family: "Roboto";
-    font-weight: 900;
-    font-size: 44px;
+    @include text($family: "roboto", $size: 44px, $weight: 900);
     line-height: 60px;
     letter-spacing: 6%;
     text-align: center;
@@ -22,9 +19,7 @@
     margin: 0px 237px 30px;
   }
   &__button {
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 16px;
+    @include text($family: "roboto", $size: 16px, $weight: 700);
     line-height: 30px;
     letter-spacing: 6%;
     text-align: center;

@@ -4,14 +4,10 @@ header {
 }
 .header {
   &__container {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+    @extend %flex;
   }
   &__logo {
-    font-family: "raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
+    @include text($family: "raleway", $size: 26px, $weight: 700);
     line-height: 3, 84;
     letter-spacing: 3%;
     color:black;
@@ -20,17 +16,15 @@ header {
   &__item {
     display: flex;
     align-items: center;
+   
   }
   &__email {
+    @include text($family: "roboto", $size: 16px, $weight: 400);
     display: inline-block;
-    align-items: center;
-    font-family: "roboto";
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1, 71;
     letter-spacing: 3%;
     color: $grey;
-    display: flex;
+    @extend %flex;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
@@ -43,10 +37,8 @@ header {
   }
 
   &__phone {
+    @include text($family: "roboto", $size: 16px, $weight: 400);
     align-items: center;
-    font-family: "roboto";
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1, 71;
     letter-spacing: 3%;
     color: $grey;
@@ -62,20 +54,16 @@ header {
   }
 }
 .nav {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex;
 
   &__list {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex;
     gap: 50px;
     padding: 32px 0px 32px;
   }
   &__link {
+    @include text($family: "roboto", $size: 14px, $weight: 500);
     display: inline-block;
-    font-family: "roboto" sans-serif;
-    font-weight: 500;
-    font-size: 14px;
     line-height: 100%;
     color: #212121;
     position: relative;
@@ -103,11 +91,10 @@ header {
 }
 
 .header__list {
-  display: inline-block;
-  display: flex;
-  justify-content: space-between;
+  @extend %flex;
+  flex-direction: row;
   gap: 50px;
-  padding: 32px 15px 32px 264px;
+  padding: 32px 15px 32px 224px;
 }
 
 .envelope {
