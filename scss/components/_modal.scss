@@ -156,7 +156,7 @@
       display: inline-block;
       width: 370px;
       height: 120px;
-padding: 12px 0px 84px 16px;
+      padding: 12px 0px 84px 16px;
       @media screen and (min-width: 768px) {
         width: 370px;
         height: 120px;
@@ -231,11 +231,11 @@ padding: 12px 0px 84px 16px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      @media screen and (min-width: 768px) {
-       margin: 0px 125px 40px;
+    @media screen and (min-width: 768px) {
+      margin: 0px 125px 40px;
     }
     @media screen and (min-width: 1200px) {
-    margin: 0px 164px 40px;
+      margin: 0px 164px 40px;
     }
     &:hover,
     &:focus {

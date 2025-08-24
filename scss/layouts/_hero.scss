@@ -2,18 +2,19 @@
   background-color: $fon__black;
   background-repeat: no-repeat;
   background-position: center;
- background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ), url(../../image/hero__mobile.png);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../image/hero__mobile.png);
   padding: 118px 0px;
-    @media screen and (min-width: 768px) {
-       background-image: linear-gradient(
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../../image/hero__tablet.png);
-      padding: 118px 0px;
+    padding: 118px 0px;
   }
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
@@ -25,24 +26,23 @@
   }
 
   &__title__white {
-     @include text($family: "roboto", $size: 26px, $weight: 900);
-     line-height: 42px;
-        letter-spacing: 6%;
+    @include text($family: "roboto", $size: 26px, $weight: 900);
+    line-height: 42px;
+    letter-spacing: 6%;
     text-align: center;
     text-transform: uppercase;
     color: $white;
     margin: 0px 60px 30px;
     @media screen and (min-width: 768px) {
-       @include text($family: "roboto", $size: 26px, $weight: 900);
-    line-height: 42px;
-    margin: 0px 204px 30px;
-  }
-      @media screen and (min-width: 1200px) {
- @include text($family: "roboto", $size: 44px, $weight: 900);
-    line-height: 60px;
-    margin: 0px 237px 30px;
-  }
-   
+      @include text($family: "roboto", $size: 26px, $weight: 900);
+      line-height: 42px;
+      margin: 0px 204px 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      @include text($family: "roboto", $size: 44px, $weight: 900);
+      line-height: 60px;
+      margin: 0px 237px 30px;
+    }
   }
   &__button {
     @include text($family: "roboto", $size: 16px, $weight: 700);
@@ -56,13 +56,13 @@
     border: $hover;
     border-radius: 4px;
     padding: 10px 24px;
-     @media screen and (min-width: 768px) {
-    margin: 10px 24px;
-     margin: 0 auto;
-  }
-     @media screen and (min-width: 1200px) {
-    padding: 10px 32px;
-    margin: 0 auto;
-  }
+    @media screen and (min-width: 768px) {
+      margin: 10px 24px;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 10px 32px;
+      margin: 0 auto;
+    }
   }
 }

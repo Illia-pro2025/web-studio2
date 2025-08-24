@@ -1,12 +1,17 @@
-
 .title__black {
-    font-family: "roboto", sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 2, 77;
-    letter-spacing: 3%;
-    text-align: center;
-    color: #212121;
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 2, 77;
+  letter-spacing: 3%;
+  text-align: center;
+  color: #212121;
+  padding-bottom: 30px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
     padding-bottom: 50px;
     padding-top: 94px;
+    font-size: 36px;
   }
+}

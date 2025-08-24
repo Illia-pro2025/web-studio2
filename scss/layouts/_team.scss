@@ -1,14 +1,33 @@
 .team {
   margin-top: 94px;
-  background: fon__grey;
+  background: $fon__grey;
   &__list {
-    @extend %flex;
-    gap: 30px;
-    padding-bottom: 94px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding-bottom: 94px;
+    }
   }
   &__photo {
-    width: 270px;
-    height: 260px;
+    width: 450px;
+    height: 450px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 374px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 260px;
+    }
   }
   &__item {
     border-radius: 4px;
@@ -36,15 +55,21 @@
   &__list__icon {
     @extend %flex;
     gap: 10px;
-    margin: 0px 30px 30px 32px;
+    margin: 0px 122px 24px 122px;
+    @media screen and (min-width: 768px) {
+      margin: 0px 74px 24px 74px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 0px 32px 30px 32px;
+    }
   }
   &__link__icon {
-    @include icon($padding:12px,$fill:$grey__black,$border-r:50%);
+    @include icon($padding: 12px, $fill: $grey__black, $border-r: 50%);
     display: block;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      @include icon($padding:12px,$fill:$white,$border-r:50%);
+      @include icon($padding: 12px, $fill: $white, $border-r: 50%);
       background-color: $hover;
       width: 44px;
       height: 44px;

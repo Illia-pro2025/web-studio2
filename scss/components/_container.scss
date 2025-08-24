@@ -1,18 +1,14 @@
 .container {
-  outline: solid red;
   margin: 0 auto;
   padding: 0 15px;
   width: 100%;
   @media screen and (min-width: 480px) {
     max-width: 480px;
-      
   }
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    outline: solid green;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-  outline: solid violet;
   }
 }
