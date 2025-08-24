@@ -1,4 +1,4 @@
-.team__list__icon, .info__list, .header__list, .nav__list, .nav, .header__email, .header__container, .footer__button {
+.team__list__icon, .header__list, .nav__list, .nav, .header__email, .header__container, .footer__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -981,10 +981,6 @@ main {
   }
 }
 .info__list {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   gap: 30px;
   padding: 0px 15px 0px;
 }
@@ -999,10 +995,6 @@ main {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-orient: initial;
-    -webkit-box-direction: initial;
-        -ms-flex-direction: initial;
-            flex-direction: initial;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 0px 0px;
