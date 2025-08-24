@@ -6,14 +6,14 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../image/hero__mobile.png);
+    url(../image/hero__mobile.png);
   padding: 118px 0px;
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../image/hero__tablet.png);
+      url(../image/hero__tablet.png);
     padding: 118px 0px;
   }
   @media screen and (min-width: 1200px) {
@@ -21,7 +21,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../image/hero__desk.png);
+      url(../image/hero__desk.png);
     padding: 200px 0px;
   }
 
