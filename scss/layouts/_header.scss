@@ -63,6 +63,7 @@ header {
   }
   &__link {
     @include text($family: "roboto", $size: 14px, $weight: 500);
+    transition: color .3s linear;
     display: inline-block;
     line-height: 100%;
     color: #212121;
@@ -74,6 +75,13 @@ header {
       color: $hover;
       &::before,
       &::before {
+         opacity: 1;
+        transform: scale(1);
+      
+      }
+    }
+     &::before,
+      &::before {
         content: "";
         display: inline-block;
         width: 100%;
@@ -82,11 +90,12 @@ header {
         background-color: $hover;
         position: absolute;
         left: 0px;
-
+ opacity: 0;
+        transform: scale(0);
+        transition: opacity .3s linear, .3s linear;
         bottom: -28px;
         align-items: center;
       }
-    }
   }
 }
 

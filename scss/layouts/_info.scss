@@ -1,71 +1,148 @@
 .info {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   text-align: left;
-  @extend %flex;
   gap: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
   &__list {
     @extend %flex;
+    flex-direction: column;
     gap: 30px;
     padding: 0px 15px 0px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: initial;
+      flex-wrap: wrap
+      ;
+      padding: 0px 0px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 0px 15px 0px;
+      flex-wrap: nowrap;
+    }
   }
   &__item {
+
+
     &:nth-child(1)::before {
       content: "";
-      width: 270px;
+      width: 450px;
       height: 120px;
       display: inline-block;
-      background-image: url(../image/antenna\ 1.png);
+      background-image: url(../../image/antenna.png);
 
       background-repeat: no-repeat;
       background-position: center;
       background-color: $fon__grey;
-      padding: 25px 100px;
+      padding: 25px 192px;
+      @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 120px;
+        padding: 25px 143px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 120px;
+        padding: 25px 100px;
+      }
     }
     &:nth-child(2)::before {
       content: "";
-      width: 270px;
+      width: 450px;
       height: 120px;
       display: inline-block;
-      background-image: url(../image/clock\ 1.png);
+      background-image: url(../../image/clock.png);
       background-repeat: no-repeat;
       background-position: center;
       background-color: $fon__grey;
-      padding: 25px 100px;
+      padding: 25px 192px;
+      @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 120px;
+        padding: 25px 143px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 120px;
+        padding: 25px 100px;
+      }
     }
     &:nth-child(3)::before {
       content: "";
-      width: 270px;
+      width: 450px;
       height: 120px;
       display: inline-block;
-      background-image: url(../image/diagram\ 1.png);
+      background-image: url(../../image/diagram.png);
       background-repeat: no-repeat;
       background-position: center;
       background-color: $fon__grey;
-      padding: 25px 100px;
+      padding: 25px 192px;
+      @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 120px;
+        padding: 25px 143px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 120px;
+        padding: 25px 100px;
+      }
     }
     &:nth-child(4)::before {
       content: "";
-      width: 270px;
+      width: 450px;
       height: 120px;
       display: inline-block;
-      background-image: url(../image/astronaut\ 1.png);
+      background-image: url(../../image/astronaut.png);
       background-repeat: no-repeat;
       background-position: center;
       background-color: $fon__grey;
-      padding: 25px 100px;
+      padding: 25px 192px;
+      @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 120px;
+        padding: 25px 143px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 120px;
+        padding: 25px 100px;
+      }
     }
   }
   &__title {
     @include text($family: "roboto", $size: 14px, $weight: 700);
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
   &__text {
     @include text($family: "roboto", $size: 14px, $weight: 400);
     line-height: 24px;
     letter-spacing: 3%;
     color: $grey;
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
   }
 }
