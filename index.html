@@ -20,6 +20,14 @@
     <header class="header">
       <div class="header__container container">
         <a class="header__logo" href="./index.html"><span>Web</span>Studio</a>
+        <button type="button" class="header__button" data-mob-open>
+          <svg class="icon__mob">
+            <use
+              class="icon__burger"
+              href="./image/symbol-defs.svg#icon-burger__menu"
+            ></use>
+          </svg>
+        </button>
         <nav>
           <div class="nav">
             <ul class="nav__list">
@@ -53,6 +61,46 @@
             </ul>
           </div>
         </nav>
+      </div>
+      <div class="mob is-hidden" data-mob>
+        <div class="container">
+          <button class="mob__button" data-mob-close>
+            <svg class="mob__icon--close">
+              <use href="./image/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <nav>
+            <div class="mob__nav">
+              <ul class="mob__nav__list">
+                <li>
+                  <a class="mob__nav__link" href="./index.html">Студія</a>
+                </li>
+                <li>
+                  <a class="mob__nav__link" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li>
+                  <a class="mob__nav__link" href="#">Контакти</a>
+                </li>
+              </ul>
+              <ul class="mob__list">
+                <li class="mob__item">
+                  <a class="mob__phone"> +38 096 111 11 11</a>
+                </li>
+                <li class="mob__item">
+                  <a class="mob__email"> info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="mob__list__second">
+                <li><a href="" class="mob__link">Instagram</a></li>
+                <li><a href="" class="mob__link">Twitter</a></li>
+                <li><a href="" class="mob__link">Facebook</a></li>
+                <li><a href="" class="mob__link">LinkedIn</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -137,14 +185,14 @@
           <li class="info__item">
             <h3 class="info__title">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="info__text">
-               Значимість цих проблем настільки очевидна, що реалізація планових
+              Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
           </li>
           <li class="info__item">
             <h3 class="info__title">ПЛАНУВАННЯ</h3>
             <p class="info__text">
-               Значимість цих проблем настільки очевидна, що реалізація планових
+              Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
           </li>
@@ -157,28 +205,24 @@
           </li>
         </ul>
       </section>
-      <section class="photo container">
+      <section class="do container">
         <h2 class="title__black">Чим ми займаємося</h2>
-        <ul class="photo__list">
-          <li>
-            <img
-              src="./image/programme.png"
-              alt="programme"
-              class="photo__img"
-            />
-            <h3 class="photo__title">Десктопні додатки</h3>
+        <ul class="do__list">
+          <li class="do__item">
+            <img src="./image/programme.png" alt="programme" class="do__img" />
+            <h3 class="do__title">Десктопні додатки</h3>
           </li>
-          <li>
+          <li class="do__item">
             <img
               src="./image/smartphone.png"
               alt="smartphone"
-              class="photo__img"
+              class="do__img"
             />
-            <h3 class="photo__title">Мобільні додатки</h3>
+            <h3 class="do__title">Мобільні додатки</h3>
           </li>
-          <li>
-            <img src="./image/style.png" alt="style" class="photo__img" />
-            <h3 class="photo__title">Дизайнерські рішення</h3>
+          <li class="do__item">
+            <img src="./image/style.png" alt="style" class="do__img" />
+            <h3 class="do__title">Дизайнерські рішення</h3>
           </li>
         </ul>
       </section>
@@ -508,6 +552,7 @@
         </div>
       </div>
     </footer>
+    <script src="./mob.js"></script>
     <script src="./modal.js"></script>
   </body>
 </html>

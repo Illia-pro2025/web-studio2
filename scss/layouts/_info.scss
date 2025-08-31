@@ -12,22 +12,18 @@
     margin-bottom: 94px;
   }
   &__list {
-
     gap: 30px;
-    padding: 0px 15px 0px;
     @media screen and (min-width: 768px) {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      padding: 0px 0px;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-direction: row;
-      padding: 0px 15px 0px;
       flex-wrap: nowrap;
     }
   }
@@ -38,20 +34,17 @@
       height: 120px;
       display: inline-block;
       background-image: url(./../image/antenna.png);
-
       background-repeat: no-repeat;
       background-position: center;
       background-color: $fon__grey;
-      padding: 25px 192px;
+      width: 100%;
       @media screen and (min-width: 768px) {
         width: 354px;
         height: 120px;
-        padding: 25px 143px;
       }
       @media screen and (min-width: 1200px) {
         width: 270px;
         height: 120px;
-        padding: 25px 100px;
       }
     }
     &:nth-child(2)::before {
@@ -63,16 +56,14 @@
       background-repeat: no-repeat;
       background-position: center;
       background-color: $fon__grey;
-      padding: 25px 192px;
+      width: 100%;
       @media screen and (min-width: 768px) {
         width: 354px;
         height: 120px;
-        padding: 25px 143px;
       }
       @media screen and (min-width: 1200px) {
         width: 270px;
         height: 120px;
-        padding: 25px 100px;
       }
     }
     &:nth-child(3)::before {
@@ -84,16 +75,14 @@
       background-repeat: no-repeat;
       background-position: center;
       background-color: $fon__grey;
-      padding: 25px 192px;
+      width: 100%;
       @media screen and (min-width: 768px) {
         width: 354px;
         height: 120px;
-        padding: 25px 143px;
       }
       @media screen and (min-width: 1200px) {
         width: 270px;
         height: 120px;
-        padding: 25px 100px;
       }
     }
     &:nth-child(4)::before {
@@ -105,16 +94,14 @@
       background-repeat: no-repeat;
       background-position: center;
       background-color: $fon__grey;
-      padding: 25px 192px;
+      width: 100%;
       @media screen and (min-width: 768px) {
         width: 354px;
         height: 120px;
-        padding: 25px 143px;
       }
       @media screen and (min-width: 1200px) {
         width: 270px;
         height: 120px;
-        padding: 25px 100px;
       }
     }
   }

@@ -1,9 +1,13 @@
 footer {
   background-color: $fon__black;
+    padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer {
+
+
   &__container {
-    padding-bottom: 60px;
+    
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
@@ -14,9 +18,9 @@ footer {
   }
   &__first__party {
     text-align: center;
-    margin: 60px 109px;
+    margin: 60px 124px;
     @media screen and (min-width: 768px) {
-      margin: 0px 204px 60px 61px;
+      margin: 0px 165px 60px 76px;
     }
     @media screen and (min-width: 1200px) {
       text-align: left;
@@ -27,13 +31,16 @@ footer {
     }
   }
   &__logo {
-    @include text($family: "raleway", $size: 26px, $weight: 700);
+    @include text($family: "raleway", $size: 24px, $weight: 700);
     line-height: 3, 84;
     letter-spacing: 3%;
     color: $white;
-    margin-top: 60px;
+  
     margin-bottom: 20px;
     display: inline-block;
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+    }
   }
   &__adress {
     @include text($family: "roboto", $size: 14px, $weight: 400);
@@ -63,17 +70,17 @@ footer {
     @include text($family: "roboto", $size: 14px, $weight: 700);
     color: $white;
     text-align: center;
-    margin-top: 60px;
+
     margin-bottom: 20px;
     @media screen and (min-width: 768px) {
       text-align: center;
-      margin-top: 65px;
+      margin-top: 5px;
       margin-bottom: 20px;
     }
     @media screen and (min-width: 1200px) {
       text-align: left;
       text-transform: uppercase;
-      margin-top: 72px;
+      margin-top: 12px;
       margin-bottom: 20px;
     }
   }
@@ -119,7 +126,7 @@ footer {
       margin: 0px 258px 20px 273px;
     }
     @media screen and (min-width: 1200px) {
-      margin: 72px 36px 20px 93px;
+      margin: 12px 36px 20px 93px;
     }
   }
   &__form {

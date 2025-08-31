@@ -1,143 +1,157 @@
 .customers {
-  &__list__icon {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin: bottom 60px;
-    @media screen and (min-width: 768px) {
+  margin-bottom:60px ;
+  margin-top:60px  ;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
+      margin-top:94px  ;
+    }
+  .title__black {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+  }
+    &__list__icon {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
-      margin-bottom: 60px;
+      margin: bottom 60px;
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+      }
+      @media screen and (min-width: 1200px) {
+        align-items: center;
+        display: flex block;
+        gap: 30px;
+        margin-bottom: 94px;
+      }
     }
-    @media screen and (min-width: 1200px) {
-      align-items: center;
-      display: flex block;
-      gap: 30px;
-      margin-bottom: 94px;
-    }
-  }
-  &__link__icon {
-    display: block;
-    border-radius: 4px;
-    border: 1px solid $grey__black;
-    width: 210px;
-    height: 92px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width: 768px) {
-      width: 226px;
-      height: 92px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 170px;
-      height: 92px;
-    }
-    &:hover,
-    &:focus {
-      display: inline-block;
-      border-radius: 4px;
-      border: 1px solid $hover;
+    &__link__icon {
       display: block;
-      & .customers__icon {
-        fill: $hover;
+      border-radius: 4px;
+      border: 1px solid $grey__black;
+      width: 210px;
+      height: 92px;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      @media screen and (min-width: 768px) {
+        width: 226px;
+        height: 92px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 170px;
+        height: 92px;
+      }
+      &:hover,
+      &:focus {
+        display: inline-block;
+        border-radius: 4px;
+        border: 1px solid $hover;
+        display: block;
+        & .customers__icon {
+          fill: $hover;
+        }
+      }
+    }
+
+    &__ya__co {
+      width: 44px;
+      height: 49px;
+      margin: 21px 81px 21px 82px;
+      fill: $grey__black;
+      @media screen and (min-width: 768px) {
+        width: 44px;
+        height: 49px;
+        margin: 21px 90px 21px 91px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 41px;
+        height: 46px;
+        margin: 23px 65px 22px 64px;
+      }
+    }
+    &__company {
+      width: 40px;
+      height: 52px;
+      margin: 20px 85px;
+      fill: $grey__black;
+      @media screen and (min-width: 768px) {
+        width: 40px;
+        height: 52px;
+        margin: 19px 93px 21px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 40px;
+        height: 51px;
+        margin: 19px 65px 21px;
+      }
+    }
+    &__company__black {
+      width: 41px;
+      height: 42px;
+      margin: 25px 85px 24px 84px;
+      fill: $grey__black;
+      @media screen and (min-width: 768px) {
+        width: 41px;
+        height: 42px;
+        margin: 24px 93px 25px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 43px;
+        height: 41px;
+        margin: 24px 64px 26px 61px;
+      }
+    }
+    &__poster__peters {
+      width: 79px;
+      height: 42px;
+      margin: 25px 65px;
+      fill: $grey__black;
+      @media screen and (min-width: 768px) {
+        width: 79px;
+        height: 42px;
+        margin: 25px 73px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 84px;
+        height: 40px;
+        margin: 24px 42px 26px 43px;
+      }
+    }
+    &__brand {
+      width: 106px;
+      height: 60px;
+      margin: 16px 52px;
+      fill: $grey__black;
+      @media screen and (min-width: 768px) {
+        width: 106px;
+        height: 60px;
+        margin: 16px 60px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 106px;
+        height: 60px;
+        margin: 16px 32px;
+      }
+    }
+    &__company__cube {
+      width: 88px;
+      height: 45px;
+      margin: 23px 60px;
+      fill: $grey__black;
+      @media screen and (min-width: 768px) {
+        width: 88px;
+        height: 45px;
+        margin: 23px 69px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 93px;
+        height: 43px;
+        margin: 22px 38px 25px;
       }
     }
   }
 
-  &__ya__co {
-    width: 44px;
-    height: 49px;
-    margin: 21px 81px 21px 82px;
-    fill: $grey__black;
-    @media screen and (min-width: 768px) {
-      width: 44px;
-      height: 49px;
-      margin: 21px 90px 21px 91px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 41px;
-      height: 46px;
-      margin: 23px 65px 22px 64px;
-    }
-  }
-  &__company {
-    width: 40px;
-    height: 52px;
-    margin: 20px 85px;
-    fill: $grey__black;
-    @media screen and (min-width: 768px) {
-      width: 40px;
-      height: 52px;
-      margin: 19px 93px 21px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 40px;
-      height: 51px;
-      margin: 19px 65px 21px;
-    }
-  }
-  &__company__black {
-    width: 41px;
-    height: 42px;
-    margin: 25px 85px 24px 84px;
-    fill: $grey__black;
-    @media screen and (min-width: 768px) {
-      width: 41px;
-      height: 42px;
-      margin: 24px 93px 25px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 43px;
-      height: 41px;
-      margin: 24px 64px 26px 61px;
-    }
-  }
-  &__poster__peters {
-    width: 79px;
-    height: 42px;
-    margin: 25px 65px;
-    fill: $grey__black;
-    @media screen and (min-width: 768px) {
-      width: 79px;
-      height: 42px;
-      margin: 25px 73px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 84px;
-      height: 40px;
-      margin: 24px 42px 26px 43px;
-    }
-  }
-  &__brand {
-    width: 106px;
-    height: 60px;
-    margin: 16px 52px;
-    fill: $grey__black;
-    @media screen and (min-width: 768px) {
-      width: 106px;
-      height: 60px;
-      margin: 16px 60px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 106px;
-      height: 60px;
-      margin: 16px 32px;
-    }
-  }
-  &__company__cube {
-    width: 88px;
-    height: 45px;
-    margin: 23px 60px;
-    fill: $grey__black;
-    @media screen and (min-width: 768px) {
-      width: 88px;
-      height: 45px;
-      margin: 23px 69px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 93px;
-      height: 43px;
-      margin: 22px 38px 25px;
-    }
-  }
-}

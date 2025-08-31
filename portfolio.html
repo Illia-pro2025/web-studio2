@@ -20,6 +20,14 @@
     <header class="header">
       <div class="header__container container">
         <a class="header__logo" href="./index.html"><span>Web</span>Studio</a>
+        <button type="button" class="header__button" data-mob-open>
+          <svg class="icon__mob">
+            <use
+              class="icon__burger"
+              href="./image/symbol-defs.svg#icon-burger__menu"
+            ></use>
+          </svg>
+        </button>
         <nav>
           <div class="nav">
             <ul class="nav__list">
@@ -53,6 +61,46 @@
             </ul>
           </div>
         </nav>
+      </div>
+      <div class="mob is-hidden" data-mob>
+        <div class="container">
+          <button class="mob__button" data-mob-close>
+            <svg class="mob__icon--close">
+              <use href="./image/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <nav>
+            <div class="mob__nav">
+              <ul class="mob__nav__list">
+                <li>
+                  <a class="mob__nav__link" href="./index.html">Студія</a>
+                </li>
+                <li>
+                  <a class="mob__nav__link" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li>
+                  <a class="mob__nav__link" href="#">Контакти</a>
+                </li>
+              </ul>
+              <ul class="mob__list">
+                <li class="mob__item">
+                  <a class="mob__phone"> +38 096 111 11 11</a>
+                </li>
+                <li class="mob__item">
+                  <a class="mob__email"> info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="mob__list__second">
+                <li><a href="" class="mob__link">Instagram</a></li>
+                <li><a href="" class="mob__link">Twitter</a></li>
+                <li><a href="" class="mob__link">Facebook</a></li>
+                <li><a href="" class="mob__link">LinkedIn</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -188,11 +236,7 @@
             </li>
             <li class="article__item">
               <div class="article__party__photo">
-                <img
-                  src="./image/book.png"
-                  alt="book"
-                  class="article__photo"
-                />
+                <img src="./image/book.png" alt="book" class="article__photo" />
                 <div class="article__wrap">
                   <p class="article__text__wrap">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -317,6 +361,6 @@
         </div>
       </div>
     </footer>
-    <script src="./modal.js"></script>
+    <script src="./mob.js"></script>
   </body>
 </html>

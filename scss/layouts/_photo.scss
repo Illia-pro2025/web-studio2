@@ -1,33 +1,40 @@
-.photo {
+.do {
   display: none;
 }
 @media screen and (min-width: 1200px) {
-  .photo {
+  .do {
+    margin-bottom: 94px;
     display: block;
+    .title__black{
+      margin-bottom:50px ;
+    }
     &__list {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 30px;
     }
+    &__item{
+      position: relative;
+    }
     &__img {
       width: 370px;
       height: 294px;
-      position: relative;
-      z-index: -2;
     }
     &__title {
       @include text($family: "roboto", $size: 14px, $weight: 700);
-      padding: 27px 0px;
-      position: relative;
-      bottom: 70px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
       background-color: #2f303acc;
       line-height: 100%;
       letter-spacing: 3%;
       text-align: center;
       text-transform: uppercase;
       color: $white;
-      z-index: -1;
+      padding:27px 0px ;
+      z-index: 1;
+     
     }
   }
 }
