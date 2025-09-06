@@ -163,7 +163,9 @@ header {
 .header__button {
   border: transparent;
   background-color: transparent;
-  margin-left: 276px;
+ position: absolute;
+ right: 10px;
+top: 5px;
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -178,6 +180,9 @@ header {
   height: 100%;
   background-color: #fff;
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -264,17 +269,20 @@ header {
 .mob__list__second {
   align-items: center;
   display: flex;
+  gap:10px ;
 }
 .mob__link {
-  align-items: center;
-  display: flex;
   color: $hover;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 2%;
-
+}
+  .mob__item--second {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   &::after {
     content: "";
     display: block;
@@ -284,4 +292,7 @@ header {
     border: 1px solid #21212133;
     rotate: (90deg);
   }
+}
+.mob__item--second:last-child::after{
+  display: none;
 }

@@ -859,7 +859,9 @@ header {
 .header__button {
   border: transparent;
   background-color: transparent;
-  margin-left: 276px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
 }
 @media screen and (min-width: 768px) {
   .header__button {
@@ -877,6 +879,16 @@ header {
   height: 100%;
   background-color: #fff;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -994,15 +1006,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 10px;
 }
 
 .mob__link {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #2196f3;
   font-family: "Roboto";
   font-weight: 500;
@@ -1010,7 +1017,17 @@ header {
   line-height: 22px;
   letter-spacing: 2%;
 }
-.mob__link::after {
+
+.mob__item--second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.mob__item--second::after {
   content: "";
   display: block;
   width: 22px;
@@ -1018,6 +1035,10 @@ header {
   opacity: 1;
   border: 1px solid rgba(33, 33, 33, 0.2);
   rotate: 90deg;
+}
+
+.mob__item--second:last-child::after {
+  display: none;
 }
 
 main {
