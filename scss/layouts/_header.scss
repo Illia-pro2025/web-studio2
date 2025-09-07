@@ -16,7 +16,9 @@ header {
   }
 
   &__container {
-    @extend %flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   &__logo {
     display: block;
@@ -163,9 +165,7 @@ header {
 .header__button {
   border: transparent;
   background-color: transparent;
- position: absolute;
- right: 10px;
-top: 5px;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -194,27 +194,33 @@ top: 5px;
   width: 40px;
 }
 .icon__burger {
+  display: block;
   height: 40px;
   width: 40px;
 }
+
 .mob__button {
-  width: 40px;
-  height: 40px;
+  width: 18px;
+  height: 18px;
   background-color: transparent;
   border: transparent;
+  position: absolute;
+  top: 21px;
+  right: 22px;
 }
 .mob__icon--close {
-  width: 40px;
-  height: 40px;
-  margin-left: 410px;
-  margin-top: 10px;
+  width: 18px;
+  height: 18px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  top: 21px;
+  right: 22px;
   &:hover {
     fill: $hover;
   }
 }
 
 .mob__nav__list {
+  margin-top: 48px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -234,7 +240,12 @@ top: 5px;
   }
 }
 .mob__list {
-  margin-top: 302px;
+    @media screen and (min-width: 320px) {
+   margin-top: 150px;
+  }
+   @media screen and (min-width:480px) {
+    margin-top: 202px;
+  }
   padding-bottom: 64px;
   gap: 32px;
 }
@@ -267,9 +278,20 @@ top: 5px;
   }
 }
 .mob__list__second {
-  align-items: center;
+  @media screen and (min-width: 320px) {
+      align-items: center;
   display: flex;
-  gap:10px ;
+  gap: 10px;
+  flex-wrap: wrap;
+  }
+  @media screen and (min-width: 480px) {
+      align-items: center;
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
+  }
+
+
 }
 .mob__link {
   color: $hover;
@@ -279,10 +301,10 @@ top: 5px;
   line-height: 22px;
   letter-spacing: 2%;
 }
-  .mob__item--second {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.mob__item--second {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   &::after {
     content: "";
     display: block;
@@ -293,6 +315,6 @@ top: 5px;
     rotate: (90deg);
   }
 }
-.mob__item--second:last-child::after{
+.mob__item--second:last-child::after {
   display: none;
 }

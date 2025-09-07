@@ -28,38 +28,36 @@
             ></use>
           </svg>
         </button>
-        <nav>
-          <div class="nav">
-            <ul class="nav__list">
-              <li>
-                <a class="nav__link" href="./index.html">Студія</a>
-              </li>
-              <li>
-                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
-              </li>
-              <li>
-                <a class="nav__link" href="#">Контакти</a>
-              </li>
-            </ul>
-            <ul class="header__list">
-              <li class="header__item">
-                <a class="header__email"
-                  ><svg class="envelope">
-                    <use href="./image/symbol-defs.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="header__item">
-                <a class="header__phone"
-                  ><svg class="smartphone">
-                    <use href="./image/symbol-defs.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__link" href="./index.html">Студія</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#">Контакти</a>
+            </li>
+          </ul>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__email"
+                ><svg class="envelope">
+                  <use href="./image/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header__item">
+              <a class="header__phone"
+                ><svg class="smartphone">
+                  <use href="./image/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </nav>
       </div>
       <div class="mob is-hidden" data-mob>
@@ -92,11 +90,19 @@
                   <a class="mob__email"> info@devstudio.com</a>
                 </li>
               </ul>
-             <ul class="mob__list__second">
-                <li class="mob__item--second"><a href="" class="mob__link">Instagram</a></li>
-                <li class="mob__item--second"><a href="" class="mob__link">Twitter</a></li>
-                <li class="mob__item--second"><a href="" class="mob__link">Facebook</a></li>
-                <li class="mob__item--second"><a href="" class="mob__link">LinkedIn</a></li>
+              <ul class="mob__list__second">
+                <li class="mob__item--second">
+                  <a href="" class="mob__link">Instagram</a>
+                </li>
+                <li class="mob__item--second">
+                  <a href="" class="mob__link">Twitter</a>
+                </li>
+                <li class="mob__item--second">
+                  <a href="" class="mob__link">Facebook</a>
+                </li>
+                <li class="mob__item--second">
+                  <a href="" class="mob__link">LinkedIn</a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -116,11 +122,14 @@
           <ul class="article__list">
             <li class="article__item">
               <div class="article__party__photo">
-                <img
-                  src="./image/web-site-personne.png"
-                  alt="web-site-personne"
-                  class="article__photo"
-                />
+                <picture
+                  ><source
+                    srcset="./image/web-site-personne@x1.png x1, ./image/web-site-personne@x2.png x2" />
+                  <img
+                    src="./image/web-site-personne@x1.png"
+                    alt="web-site-personne"
+                    class="article__photo"
+                /></picture>
                 <div class="article__wrap">
                   <p class="article__text__wrap">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -136,11 +145,15 @@
             </li>
             <li class="article__item">
               <div class="article__party__photo">
-                <img
-                  src="./image/style-basket.png"
-                  alt="style-basket"
-                  class="article__photo"
-                />
+                <picture
+                  ><source
+                    srcset="./image/style-basket@x1.png x1, ./image/style-basket@x2.png x2" />
+                  <img
+                    src="./image/style-basket@x1.png"
+                    alt="style-basket"
+                    class="article__photo"
+                /></picture>
+
                 <div class="article__wrap">
                   <p class="article__text__wrap">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -156,11 +169,15 @@
             </li>
             <li class="article__item">
               <div class="article__party__photo">
-                <img
-                  src="./image/application-sea-food.png"
-                  alt="application-sea-food"
-                  class="article__photo"
-                />
+                <picture
+                  ><source
+                    srcset="./image/application-sea-food@x1.png x1, ./image/application-sea-food@x2.png x2" />
+                  <img
+                    src="./image/application-sea-food@x1.png"
+                    alt="application-sea-food"
+                    class="article__photo"
+                /></picture>
+
                 <div class="article__wrap">
                   <p class="article__text__wrap">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -176,11 +193,14 @@
             </li>
             <li class="article__item">
               <div class="article__party__photo">
-                <img
-                  src="./image/listen.png"
-                  alt="listen"
-                  class="article__photo"
-                />
+                <picture
+                  ><source
+                    srcset="./image/listen@x1.png x1, ./image/listen@x2.png x2" />
+                  <img
+                    src="./image/listen@x1.png"
+                    alt="listen"
+                    class="article__photo"
+                /></picture>
                 <div class="article__wrap">
                   <p class="article__text__wrap">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -196,11 +216,15 @@
             </li>
             <li class="article__item">
               <div class="article__party__photo">
-                <img
-                  src="./image/article-box.png"
-                  alt="article-box"
-                  class="article__photo"
-                />
+                <picture
+                  ><source
+                    srcset="./image/article-box@x1.png x1, ./image/article-box@x2.png x2" />
+                  <img
+                    src="./image/article-box@x1.png"
+                    alt="article-box"
+                    class="article__photo"
+                /></picture>
+
                 <div class="article__wrap">
                   <p class="article__text__wrap">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -216,11 +240,15 @@
             </li>
             <li class="article__item">
               <div class="article__party__photo">
-                <img
-                  src="./image/application-word.png"
-                  alt="application-word"
-                  class="article__photo"
-                />
+                <picture
+                  ><source
+                    srcset="./image/application-word@x1.png x1, ./image/application-word@x2.png x2" />
+                  <img
+                    src="./image/application-word@x1.png"
+                    alt="application-word"
+                    class="article__photo"
+                /></picture>
+
                 <div class="article__wrap">
                   <p class="article__text__wrap">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -236,7 +264,14 @@
             </li>
             <li class="article__item">
               <div class="article__party__photo">
-                <img src="./image/book.png" alt="book" class="article__photo" />
+                <picture
+                  ><source
+                    srcset="./image/book@x1.png x1, ./image/book@x2.png x2" />
+                  <img
+                    src="./image/book@x1.png"
+                    alt="book"
+                    class="article__photo"
+                /></picture>
                 <div class="article__wrap">
                   <p class="article__text__wrap">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -252,11 +287,14 @@
             </li>
             <li class="article__item">
               <div class="article__party__photo">
-                <img
-                  src="./image/etiquet.png"
-                  alt="etiquet"
-                  class="article__photo"
-                />
+                <picture
+                  ><source
+                    srcset="./image/etiquet@x1.png x1, ./image/etiquet@x2.png x2" />
+                  <img
+                    src="./image/etiquet@x1.png"
+                    alt="etiquet"
+                    class="article__photo"
+                /></picture>
                 <div class="article__wrap">
                   <p class="article__text__wrap">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -272,11 +310,14 @@
             </li>
             <li class="article__item">
               <div class="article__party__photo">
-                <img
-                  src="./image/application-business.png"
-                  alt="application-business"
-                  class="article__photo"
-                />
+                <picture
+                  ><source
+                    srcset="./image/application-business@x1.png x1, ./image/application-business@x2.png x2" />
+                  <img
+                    src="./image/application-business@x1.png"
+                    alt="etiquet"
+                    class="article__photo"
+                /></picture>
                 <div class="article__wrap">
                   <p class="article__text__wrap">
                     Ресурс пропонує комплексні пропозиції з різним рівнем

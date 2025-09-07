@@ -18,7 +18,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container container">
+      <div class="container header__container">
         <a class="header__logo" href="./index.html"><span>Web</span>Studio</a>
         <button type="button" class="header__button" data-mob-open>
           <svg class="icon__mob">
@@ -28,42 +28,40 @@
             ></use>
           </svg>
         </button>
-        <nav>
-          <div class="nav">
-            <ul class="nav__list">
-              <li>
-                <a class="nav__link" href="./index.html">Студія</a>
-              </li>
-              <li>
-                <a class="nav__link" href="./portfolio.html">Портфоліо</a>
-              </li>
-              <li>
-                <a class="nav__link" href="#">Контакти</a>
-              </li>
-            </ul>
-            <ul class="header__list">
-              <li class="header__item">
-                <a class="header__email"
-                  ><svg class="envelope">
-                    <use href="./image/symbol-defs.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="header__item">
-                <a class="header__phone"
-                  ><svg class="smartphone">
-                    <use href="./image/symbol-defs.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__link" href="./index.html">Студія</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#">Контакти</a>
+            </li>
+          </ul>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__email"
+                ><svg class="envelope">
+                  <use href="./image/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header__item">
+              <a class="header__phone"
+                ><svg class="smartphone">
+                  <use href="./image/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </nav>
       </div>
       <div class="mob is-hidden" data-mob>
-        <div class="container">
+        <div class="container mob__party__first">
           <button class="mob__button" data-mob-close>
             <svg class="mob__icon--close">
               <use href="./image/symbol-defs.svg#icon-Vector"></use>
@@ -93,10 +91,18 @@
                 </li>
               </ul>
               <ul class="mob__list__second">
-                <li class="mob__item--second"><a href="" class="mob__link">Instagram</a></li>
-                <li class="mob__item--second"><a href="" class="mob__link">Twitter</a></li>
-                <li class="mob__item--second"><a href="" class="mob__link">Facebook</a></li>
-                <li class="mob__item--second"><a href="" class="mob__link">LinkedIn</a></li>
+                <li class="mob__item--second">
+                  <a href="" class="mob__link">Instagram</a>
+                </li>
+                <li class="mob__item--second">
+                  <a href="" class="mob__link">Twitter</a>
+                </li>
+                <li class="mob__item--second">
+                  <a href="" class="mob__link">Facebook</a>
+                </li>
+                <li class="mob__item--second">
+                  <a href="" class="mob__link">LinkedIn</a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -209,19 +215,42 @@
         <h2 class="title__black">Чим ми займаємося</h2>
         <ul class="do__list">
           <li class="do__item">
-            <img src="./image/programme.png" alt="programme" class="do__img" />
+            <picture>
+              <source
+                srcset="./image/programme@x1.png x1, ./image/programme@x2.png x2"
+                class="do__img"
+              />
+              <img
+                src="./image/programme@x1.png"
+                alt="programme"
+                class="do__img"
+              />
+            </picture>
             <h3 class="do__title">Десктопні додатки</h3>
           </li>
           <li class="do__item">
-            <img
-              src="./image/smartphone.png"
-              alt="smartphone"
-              class="do__img"
-            />
+            <picture>
+              <source
+                srcset="./image/smartphone@x1.png x1, ./image/smartphone@x2.png x2"
+                class="do__img"
+              />
+              <img
+                src="./image/smartphone@x1.png"
+                alt="smartphone"
+                class="do__img"
+              />
+            </picture>
+
             <h3 class="do__title">Мобільні додатки</h3>
           </li>
           <li class="do__item">
-            <img src="./image/style.png" alt="style" class="do__img" />
+            <picture>
+              <source
+                srcset="./image/style@x1.png x1, ./image/style@x2.png x2"
+                class="do__img"
+              />
+              <img src="./image/style@x1.png" alt="style" class="do__img" />
+            </picture>
             <h3 class="do__title">Дизайнерські рішення</h3>
           </li>
         </ul>
@@ -231,11 +260,16 @@
           <h2 class="title__black">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./image/designer.png"
-                alt="designer"
-                class="team__photo"
-              />
+              <picture
+                ><source
+                  srcset="./image/designer@x1.png x1 , ./image/designer@x2.png x2"
+                  class="team__photo" />
+                <img
+                  src="./image/designer@x1.png"
+                  alt="designer"
+                  class="team__photo"
+              /></picture>
+
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <h4 class="team__profession">Product Designer</h4>
               <ul class="team__list__icon">
@@ -282,11 +316,16 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./image/developer.png"
-                alt="developer"
-                class="team__photo"
-              />
+              <picture>
+                <source
+                  srcset="./image/developer@x1.png x1, ./image/developer@x2.png x2"
+                />
+                <img
+                  src="./image/developer@x1.png"
+                  alt="developer"
+                  class="team__photo"
+                />
+              </picture>
               <h3 class="team__name">Ольга Рєпіна</h3>
               <h4 class="team__profession">Frontend Developer</h4>
               <ul class="team__list__icon">
@@ -333,11 +372,15 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./image/marketing.png"
-                alt="marketing"
-                class="team__photo"
-              />
+              <picture
+                ><source
+                  srcset="./image/marketing@x1.png x1,./image/marketing@x2.png x2" />
+                <img
+                  src="./image/marketing@x1.png"
+                  alt="marketing"
+                  class="team__photo"
+              /></picture>
+
               <h3 class="team__name">Микола Тарасов</h3>
               <h4 class="team__profession">Marketing</h4>
               <ul class="team__list__icon">
@@ -384,11 +427,15 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./image/ui-designer.png"
-                alt="ui-designer"
-                class="team__photo"
-              />
+              <picture
+                ><source
+                  srcset="./image/ui-designer@x1.png x1, ./image/ui-designer@x2.png x2" />
+                <img
+                  src="./image/ui-designer@x1.png"
+                  alt="ui-designer"
+                  class="team__photo"
+              /></picture>
+
               <h3 class="team__name">Михайло Єрмаков</h3>
               <h4 class="team__profession">UI Designer</h4>
               <ul class="team__list__icon">

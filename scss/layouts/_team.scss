@@ -29,8 +29,8 @@
     }
   }
   &__photo {
-    width: 450px;
-    height: 460px;
+    width: 100%;
+
     @media screen and (min-width: 768px) {
       width: 354px;
       height: 374px;
@@ -75,8 +75,9 @@
   }
   &__list__icon {
     @extend %flex;
+    justify-content: center;
     gap: 10px;
-    margin: 0px 122px 0px 122px;
+    margin: 0px auto;
     @media screen and (min-width: 768px) {
       margin: 0px 74px 24px 74px;
     }

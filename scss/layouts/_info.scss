@@ -33,11 +33,17 @@
       width: 450px;
       height: 120px;
       display: inline-block;
-      background-image: url(./../image/antenna.png);
+      background-image: url(./../image/antenna@x1.png);
       background-repeat: no-repeat;
       background-position: center;
       background-color: $fon__grey;
       width: 100%;
+        @media (min-device-pixel-ratio: 2),
+ (-webkit-min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+  background-image: url(./../image/antenna@x2.png);
+ }
       @media screen and (min-width: 768px) {
         width: 354px;
         height: 120px;
@@ -52,11 +58,17 @@
       width: 450px;
       height: 120px;
       display: inline-block;
-      background-image: url(./../image/clock.png);
+      background-image: url(./../image/clock@x1.png);
       background-repeat: no-repeat;
       background-position: center;
       background-color: $fon__grey;
       width: 100%;
+           @media (min-device-pixel-ratio: 2),
+ (-webkit-min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+  background-image: url(./../image/clock@x2.png);
+ }
       @media screen and (min-width: 768px) {
         width: 354px;
         height: 120px;
@@ -71,11 +83,17 @@
       width: 450px;
       height: 120px;
       display: inline-block;
-      background-image: url(./../image/diagram.png);
+      background-image: url(./../image/diagram@x1.png);
       background-repeat: no-repeat;
       background-position: center;
       background-color: $fon__grey;
       width: 100%;
+                @media (min-device-pixel-ratio: 2),
+ (-webkit-min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+  background-image: url(./../image/diagram@x2.png);
+ }
       @media screen and (min-width: 768px) {
         width: 354px;
         height: 120px;
@@ -90,11 +108,17 @@
       width: 450px;
       height: 120px;
       display: inline-block;
-      background-image: url(./../image/astronaut.png);
+      background-image: url(./../image/astronaut@x1.png);
       background-repeat: no-repeat;
       background-position: center;
       background-color: $fon__grey;
       width: 100%;
+       @media (min-device-pixel-ratio: 2),
+ (-webkit-min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+  background-image: url(./../image/astronaut@x2.png);
+ }
       @media screen and (min-width: 768px) {
         width: 354px;
         height: 120px;
