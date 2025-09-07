@@ -38,12 +38,12 @@
       background-position: center;
       background-color: $fon__grey;
       width: 100%;
-        @media (min-device-pixel-ratio: 2),
- (-webkit-min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx) {
-  background-image: url(./../image/antenna@x2.png);
- }
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(./../image/antenna@x2.png);
+      }
       @media screen and (min-width: 768px) {
         width: 354px;
         height: 120px;
@@ -63,12 +63,12 @@
       background-position: center;
       background-color: $fon__grey;
       width: 100%;
-           @media (min-device-pixel-ratio: 2),
- (-webkit-min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx) {
-  background-image: url(./../image/clock@x2.png);
- }
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(./../image/clock@x2.png);
+      }
       @media screen and (min-width: 768px) {
         width: 354px;
         height: 120px;
@@ -83,24 +83,39 @@
       width: 450px;
       height: 120px;
       display: inline-block;
-      background-image: url(./../image/diagram@x1.png);
+
       background-repeat: no-repeat;
       background-position: center;
       background-color: $fon__grey;
       width: 100%;
-                @media (min-device-pixel-ratio: 2),
- (-webkit-min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx) {
-  background-image: url(./../image/diagram@x2.png);
- }
+      background-image: url(./../image/diagram@x1.png);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(./../image/diagram@x2.png);
+      }
       @media screen and (min-width: 768px) {
         width: 354px;
         height: 120px;
+        background-image: url(./../image/diagram@x1.png);
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(./../image/diagram@x2.png);
+        }
       }
       @media screen and (min-width: 1200px) {
         width: 270px;
         height: 120px;
+        background-image: url(./../image/diagram@x1.png);
+        @media (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(./../image/diagram@x2.png);
+        }
       }
     }
     &:nth-child(4)::before {
@@ -113,12 +128,12 @@
       background-position: center;
       background-color: $fon__grey;
       width: 100%;
-       @media (min-device-pixel-ratio: 2),
- (-webkit-min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx) {
-  background-image: url(./../image/astronaut@x2.png);
- }
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(./../image/astronaut@x2.png);
+      }
       @media screen and (min-width: 768px) {
         width: 354px;
         height: 120px;

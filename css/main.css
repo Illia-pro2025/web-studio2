@@ -1388,11 +1388,11 @@ main {
   width: 450px;
   height: 120px;
   display: inline-block;
-  background-image: url(./../image/diagram@x1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
   width: 100%;
+  background-image: url(./../image/diagram@x1.png);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .info__item:nth-child(3)::before {
@@ -1403,12 +1403,24 @@ main {
   .info__item:nth-child(3)::before {
     width: 354px;
     height: 120px;
+    background-image: url(./../image/diagram@x1.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .info__item:nth-child(3)::before {
+    background-image: url(./../image/diagram@x2.png);
   }
 }
 @media screen and (min-width: 1200px) {
   .info__item:nth-child(3)::before {
     width: 270px;
     height: 120px;
+    background-image: url(./../image/diagram@x1.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .info__item:nth-child(3)::before {
+    background-image: url(./../image/diagram@x2.png);
   }
 }
 .info__item:nth-child(4)::before {
