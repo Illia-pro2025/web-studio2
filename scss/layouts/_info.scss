@@ -12,8 +12,11 @@
     margin-bottom: 94px;
   }
   &__list {
+    display: flex;
     gap: 30px;
+    flex-direction: column;
     @media screen and (min-width: 768px) {
+      flex-direction: initial;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -30,7 +33,7 @@
   &__item {
     &:nth-child(1)::before {
       content: "";
-      width: 450px;
+      background-size: 70px;
       height: 120px;
       display: inline-block;
       background-image: url(./../image/antenna@x1.png);
@@ -55,7 +58,7 @@
     }
     &:nth-child(2)::before {
       content: "";
-      width: 450px;
+      background-size: 70px;
       height: 120px;
       display: inline-block;
       background-image: url(./../image/clock@x1.png);
@@ -80,10 +83,9 @@
     }
     &:nth-child(3)::before {
       content: "";
-      width: 450px;
       height: 120px;
       display: inline-block;
-
+      background-size: 70px;
       background-repeat: no-repeat;
       background-position: center;
       background-color: $fon__grey;
@@ -120,12 +122,12 @@
     }
     &:nth-child(4)::before {
       content: "";
-      width: 450px;
       height: 120px;
       display: inline-block;
       background-image: url(./../image/astronaut@x1.png);
       background-repeat: no-repeat;
       background-position: center;
+      background-size: 70px;
       background-color: $fon__grey;
       width: 100%;
       @media (min-device-pixel-ratio: 2),
