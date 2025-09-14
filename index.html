@@ -127,17 +127,18 @@
                 Залиште свої дані, ми вам передзвонимо
               </h3>
               <form action="">
-                <label
-                  ><p class="modal__title">Ім'я</p>
+                <label class="modal__title"
+                  >Ім'я
+
                   <input class="modal__input" type="name" /><svg
                     class="modal__icon"
                   >
                     <use href="./image/symbol-defs.svg#icon-person"></use>
                   </svg>
                 </label>
-
-                <label class="modal__label">
-                  <p class="modal__title">Телефон</p>
+                <label class="modal__title"
+                >
+                  Телефон
                   <input class="modal__input" type="phone" /><svg
                     class="modal__icon"
                   >
@@ -145,20 +146,19 @@
                   </svg>
                 </label>
 
-                <label class="modal__label"
-                  ><p class="modal__title">Пошта</p>
-                  <input class="modal__input" type="email" /><svg
+                <label class="modal__title"
+                  >Пошта <input class="modal__input" type="email" /><svg
                     class="modal__icon"
                   >
                     <use href="./image/symbol-defs.svg#icon-email"></use>
                   </svg>
-                </label>
-                <p class="modal__area__title">Коментар</p>
-                <label class="modal__area__label">
+                </label >
+              
+                <label class="modal__title ">
+                    Коментар
                   <input
-                    class="modal__area__text"
                     placeholder="Введіть текст"
-                    class="modal__area__input"
+                    class="modal__input"
                 /></label>
                 <div class="modal__checkbox">
                   <input class="modal__checkbox__input" type="checkbox" />
@@ -260,10 +260,9 @@
           <h2 class="title__black">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <picture
+              <picture class="team__photo"
                 ><source
-                  srcset="./image/designer@x1.png x1 , ./image/designer@x2.png x2"
-                  class="team__photo" />
+                  srcset="./image/designer@x1.png x1 , ./image/designer@x2.png x2" />
                 <img
                   src="./image/designer@x1.png"
                   alt="designer"
@@ -316,7 +315,7 @@
               </ul>
             </li>
             <li class="team__item">
-              <picture>
+              <picture class="team__photo">
                 <source
                   srcset="./image/developer@x1.png x1, ./image/developer@x2.png x2"
                 />
@@ -372,7 +371,7 @@
               </ul>
             </li>
             <li class="team__item">
-              <picture
+              <picture class="team__photo"
                 ><source
                   srcset="./image/marketing@x1.png x1,./image/marketing@x2.png x2" />
                 <img
@@ -427,7 +426,7 @@
               </ul>
             </li>
             <li class="team__item">
-              <picture
+              <picture class="team__photo"
                 ><source
                   srcset="./image/ui-designer@x1.png x1, ./image/ui-designer@x2.png x2" />
                 <img
